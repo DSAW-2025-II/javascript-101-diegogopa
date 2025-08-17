@@ -14,14 +14,15 @@ function factorial(n) {
   if(n<0){
     return undefined;
   }
-  if(n=0){
+  if(n==0){
     return 1;
   }
   else{
-    for(let rep=n-1;rep==1;rep--){
-      n=n*rep;
+    let result=1;
+    for(let rep=n;rep>=1;rep--){
+      result=result*rep;
     }
-    return n;
+    return result;
   }
 }
 
